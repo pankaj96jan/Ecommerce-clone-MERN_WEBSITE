@@ -1,0 +1,37 @@
+.productLink {
+  text-decoration: none;
+}
+.product_card {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  color: rgb(42 35 35 / 70%);
+  text-decoration: none;
+  margin: 2vmax;
+  transition: all 0.5s;
+  padding-bottom: 6.4px;
+  border: 1px solid black;
+}
+.product_card > p {
+  padding-left: 100px;
+}
+#product_cardImg {
+  width: 300px;
+}
+#productcardStarReview {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 35px;
+}
+#productcardStarReview > span {
+  font-size: 20px;
+  align-items: stretch;
+}
+.product_card > span {
+  padding-left: 110px;
+  font-size: 20px;
+}
+.product_card :hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  transform: translateY(-1max);
+}
