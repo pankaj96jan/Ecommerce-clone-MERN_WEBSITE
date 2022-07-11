@@ -18,3 +18,7 @@
   border: 1px;
   border-color: whitesmoke;
 }
+.product_details > div >img {
+  height: 100vh;
+  width: 100vw;
+}

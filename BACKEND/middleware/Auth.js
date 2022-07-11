@@ -17,11 +17,19 @@ exports.isAuthenticateUser = catchasyncErrors(async (req, res, next) => {
     next()
 
 })
-//Autorize role for admin usre diffrence
-exports.authorizeRoles = (...roles) => {
-if(roles.includes("admin")){
-    console.log("running");
-}
+//Autorize role for admin user diffrence
+exports.authorizeRoles = (role) => {
+
+    return function (req, res, next) {
+        // console.log(req.user);
+        if (req.user.role === role) {
+            return next()
+        }
+        res.json({
+            succes: false,
+            message: "role not matched"
+        })
+    }
 }
 
 
