@@ -7,8 +7,8 @@ export const login = (email, passowrd) => async (dispatch) => {
 
         const config = { headers: { "Content-Type": "application/json" } }
         const { data } = await axios.post(`/api/v1/login`, { email, passowrd }, config)
-            console.log(data,"userAction");
-        dispatch({type:LOGIN_SUCCESS,payload:data.user})
+        console.log(data, "userAction");
+        dispatch({ type: LOGIN_SUCCESS, payload: data.user })
 
     } catch (error) {
         dispatch({ type: LOGIN_FAIL, payload: error.response.data.message })

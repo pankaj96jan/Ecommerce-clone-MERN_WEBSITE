@@ -11,7 +11,7 @@
 //                 return {
 //                     ...state,
 //                     loading: false,
-//                     isAuthenticated: true,
+//                     isAuthenticated: true,d
 //                     user: action.payload,
 //                 }
 //             case LOGIN_FAIL:
